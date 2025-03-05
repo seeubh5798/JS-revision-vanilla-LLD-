@@ -85,8 +85,9 @@ function checkEmail(input) {
     else {
 
         showSuccess(email);
-        return true;
+        
     }
+    return true;
 }
 
 form.addEventListener('submit', function (e) {
@@ -97,10 +98,18 @@ form.addEventListener('submit', function (e) {
     checkPassword(password, confirmPassword)){
         alert('Form submitted successfully');
         form.reset();
+        removeclass([username, email, password, confirmPassword]);
     }
 
 
-})
+});
+
+function removeclass(inputs){
+    inputs.forEach(input =>{
+        const formControl = input.parentElement;
+        formControl.className = "form_control"
+    })
+}
 
 function checkPassword(password, confirmPassword) {
     if (password.value!== confirmPassword.value) {
@@ -108,8 +117,9 @@ function checkPassword(password, confirmPassword) {
         return false;
     } else {
         showSuccess(confirmPassword);
-        return true;
+        
     }
+    return true;
 }
 
 // let context =this;
