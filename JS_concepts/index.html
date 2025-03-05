@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+ <style>
+    div{
+        border: 1px solid black;
+        margin: 20px;
+    }
+    #subchild{
+        width: 1200px;
+        height: 15px;
+    }
+ </style>
+   
+</head>
+<body>
+    Namaste js!
+
+    <input type="text" onkeyup="betterFunction()"/>
+
+    <div id="grandparent">
+        <div id="parent" >
+            <div id="child" >
+                <div id="subchild" ></div>
+            </div>
+        </div>
+    </div>
+    <script src="eventpropagation.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
