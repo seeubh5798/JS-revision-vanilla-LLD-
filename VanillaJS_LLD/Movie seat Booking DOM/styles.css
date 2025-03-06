@@ -1,0 +1,14 @@
+
+
+.box{
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#parent{
+    display: flex;
+    
+}
